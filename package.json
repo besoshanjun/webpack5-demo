@@ -1,0 +1,36 @@
+{
+  "name": "small-webpack-dome",
+  "version": "1.0.0",
+  "description": "用于webpack特性验证",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./scripts/start.js",
+    "build": "webpack --mode production",
+    "build:dev": "cross-env NODE_ENV=development npm run build"
+  },
+  "author": "决明",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "@hot-loader/react-dom": "^17.0.1",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "cross-env": "^7.0.3",
+    "execa": "^5.1.1",
+    "html-webpack-plugin": "^5.4.0",
+    "inquirer": "^8.2.0",
+    "webpack": "^5.59.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.3.1"
+  },
+  "dependencies": {
+    "debug": "^4.3.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hot-loader": "^4.13.0"
+  }
+}
