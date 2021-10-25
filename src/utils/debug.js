@@ -33,5 +33,8 @@ const handleProxy = new Proxy(handle, {
     }
   },
 })
-window.debug = handleProxy
+if(__DEV__){
+  console.log('__DEV__: ', __DEV__); //! dhj test
+  window.debug = handleProxy
+}
 export default handleProxy

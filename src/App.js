@@ -7,8 +7,10 @@ class App extends Component {
   render() {
     const { name } = this.props;
     console.log(process.env.NODE_ENV);
+    // startDelete
     debug.live('render')
     debug.view('啊哈哈')
+    // endDelete
     return (
       <>
         <h1>hello {name}!</h1>
